@@ -1,0 +1,120 @@
+[
+	{ "keys": ["alt+space"], "command": "auto_complete" },
+    { "keys": ["alt+space"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    },
+    {"keys": ["alt+d"], "command": "code_intel_auto_complete" },
+    { "keys": ["ctrl+alt+d"], "command": "goto_definition" },//跳转到函数或CSS定义
+	{ "keys": ["ctrl+shift+alt+space"], "command": "delete_trailing_spaces" },
+	{
+ 	 	"keys": ["ctrl+alt+t"],
+ 		"command": "open_terminal",
+ 		"args": {
+    		"parameters": ["-T", "Custom Window Title"]
+ 	 	}
+	},
+    { "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+    //goto_css_declaration
+	{
+        "keys": ["ctrl+alt+."], "command": "goto_css_declaration",
+        "args": {"goto": "next"}
+    },
+    {
+        "keys": ["ctrl+alt+,"],  "command": "goto_css_declaration",
+        "args": {"goto": "prev"}
+    },
+    //browsers
+    { "keys": ["ctrl+shift+alt+c"], "command": "copy_path" },
+    { "keys": ["ctrl+alt+c"], "command": "css_comb" },
+    { "keys": ["f1"], "command": "side_bar_files_open_with",
+        "args": {
+                    "paths": [],
+                    "application": "D:\\Firefox\\Profiles\\webDev.lnk",
+                    "extensions":".*" //any file with extension
+                }
+    },
+    { "keys": ["f2"], "command": "side_bar_files_open_with",
+        "args": {
+                    "paths": [],
+                    "application": "D:\\Program Files\\360Chrome\\Chrome\\Application\\360chrome.exe",
+                    "extensions":".*", //any file with extension
+                    "args":[]
+                },
+        "open_automatically" : false // will close the view/tab and launch the application
+    },
+    { "keys": ["f3"], "command": "side_bar_files_open_with",
+        "args": {
+                    "paths": [],
+                    "application": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+                    "extensions":".*", //any file with extension
+                    "args":[]
+                },
+        "open_automatically" : false // will close the view/tab and launch the application
+    },
+    { "keys": ["f4"], "command": "side_bar_files_open_with",
+        "args": {
+                    "paths": [],
+                    "application": "C:\\Users\\P\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+                    "extensions":".*", //any file with extension
+                    "args":[]
+                },
+        "open_automatically" : false // will close the view/tab and launch the application
+    },
+    //clipboard Manager
+    { "keys": ["ctrl+x"], "command": "clipboard_manager_cut" },
+    { "keys": ["ctrl+c"], "command": "clipboard_manager_copy" },
+    { "keys": ["ctrl+v"], "command": "clipboard_manager_paste" },
+    { "keys": ["ctrl+shift+v"], "command": "paste_and_indent" },
+    { "keys": ["ctrl+k", "ctrl+v"], "command": "paste_from_history" },
+    //Quote​HTML
+    {
+        "keys": ["ctrl+alt+'"],
+        "command": "quote_html",
+        "args": {
+            "action": "single"
+        }
+    },
+    {
+        "keys": ["ctrl+alt+shift+'"],
+        "command": "quote_html",
+        "args": {
+            "action": "double"
+        }
+    },
+    //修改ConvertToUTF8原始KEYMAP为下面：
+    { "keys": ["ctrl+shift+alt+g"], "command": "convert_to_utf8", "args": {"encoding": "GBK", "stamp": "0" } },
+    //alignment
+    { "keys": ["ctrl+alt+shift+a"], "command": "alignment" },
+    //expand
+    { "keys": ["ctrl+shift+e"], "command": "expand_region" },
+    {
+      "keys": ["ctrl+u"],
+      "command": "expand_region",
+      "args": {"undo": true},
+      "context": [{ "key": "expand_region_soft_undo" }]
+    },
+    //
+    { "keys": ["ctrl+shift+alt+a"], "command": "expand_selection", "args": {"to": "tag"} },
+    //
+    { "keys": ["ctrl+e"], "command": "next_field", "context":
+        [
+            { "key": "has_next_field", "operator": "equal", "operand": true }
+        ]
+    },
+    //http://caniuse.com/
+    { "keys": ["ctrl+alt+f"], "command": "use_it" },
+    {"keys": ["ctrl+alt+c"], "command": "caniuse"},
+    //toggle vintage line number
+    {"keys": ["ctrl+t"], "command": "toggle_setting", "args": {"setting": "vintage_lines.force_mode"}},
+    //
+    // Toggle Global Enable
+    {
+        "keys": ["ctrl+alt+shift+e"],
+        "command": "bh_toggle_enable"
+    },
+]
+

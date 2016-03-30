@@ -1,0 +1,108 @@
+[
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
+
+			//application firefox
+            {
+                "caption": "[F1]firefox(webDev)",
+                "id": "side-bar-files-open-with-firefox",
+
+                "command": "side_bar_files_open_with",
+                "args": {
+                            "paths": [],
+                            "application": "D:\\Firefox\\Profiles\\webDev.lnk",
+                            "extensions":".*" //any file with extension
+                        }
+            },
+            {
+				"caption": "[F2]360Chrome",
+				"id": "side-bar-files-open-with-360chrome",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "D:\\Program Files\\360Chrome\\Chrome\\Application\\360chrome.exe",
+									"extensions":".*", //any file with extension
+									"args":[]
+						},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+			{
+				"caption": "[F3]IE9(64)",
+				"id": "side-bar-files-open-with-IE9x64",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+									"extensions":".*", //any file with extension
+									"args":[]
+						},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+			{
+				"caption": "[F4]Chrome",
+				"id": "side-bar-files-open-with-360chrome",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "C:\\Users\\P\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe",
+									"extensions":".*", //any file with extension
+									"args":[]
+						},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+
+			//application 1
+			/*{
+				"caption": "Photoshop",
+				"id": "side-bar-files-open-with-photoshop",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "D:\\Green2016\\Adobe Photoshop CC\\Adobe Photoshop CC (64 Bit)\\Photoshop.exe",
+									"extensions":"psd|png|jpg|jpeg",  //any file with these extensions
+									"args":[]
+								},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},
+*/
+			//separator
+			{"caption":"-"},
+
+			//application 2
+			/*{
+				"caption": "SeaMonkey",
+				"id": "side-bar-files-open-with-seamonkey",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "C:\\Archivos de programa\\SeaMonkey\\seamonkey.exe", // WINNT
+									"extensions":"", //open all even folders
+									"args":[]
+								},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},*/
+			//application n
+			/*{
+				"caption": "Chrome",
+				"id": "side-bar-files-open-with-chrome",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "C:\\Documents and Settings\\tito\\local\\Datos de programa\\Google\\Chrome\\Application\\chrome.exe",
+									"extensions":".*", //any file with extension
+									"args":[]
+						},
+				"open_automatically" : false // will close the view/tab and launch the application
+			},*/
+
+			{"caption":"-"}
+		]
+	}
+]

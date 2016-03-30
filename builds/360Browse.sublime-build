@@ -1,0 +1,5 @@
+{
+	// "shell_cmd": "make"
+	"cmd": ["D:\\Program Files\\360Chrome\\Chrome\\Application\\360chrome.exe","$file"],
+	"selector":[text.html]
+}
